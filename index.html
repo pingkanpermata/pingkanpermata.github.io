@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingkan's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Pingkan </span><br> Permata From Indonesia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About Me-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello ! My name is Pingkan Permata from Indonesia ! i have a diverse set of skilss
+                        ranging from HTML to CSS and Javascript. I love programming, as well as running,reading a book,
+                        watch a documentary movies and learning new things !
+                        <br> Feel free to get in touch or take a look at my past work below
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Development</span></li>
+                            <li><span>Bootstrap 5</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>MySQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>make a website music downloader at project.id</li>
+                            <li><span>2022</span><br>Administration of Sinar Inti Baja Cirebon</li>
+                            <li><span>2016-2018</span><br>member of the Mahawarman's student regiment Bandung</li>
+                            <li><span>2013-2014</span><br>Public Relations of Hizbul wathan at high school</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013-2015</span><br>Muhammadiyah 2 Sidoarjo High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Everything on the page from the logo to the search bar, buttons, 
+                        overall layout and how the user interacts with the page was created 
+                        by a front end developer. Front end developers are in charge of the 
+                        look and feel of the website.
+                    </p>
+                    <a href="https://www.freecodecamp.org/news/front-end-developer-what-is-front-end-development-explained-in-plain-english/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Back-End Development</h2>
+                    <p>The back end of a website includes three primary components: server, application, 
+                        and database. The server is the computer or system that receives and sends data, 
+                        the application processes requests and responses, and the database organizes and 
+                        secures data.
+                    </p>
+                    <a href="https://www.computerscience.org/bootcamps/guides/what-is-back-end-development/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Full stack web developers have the ability to design complete web applications and 
+                        websites. They work on the frontend, backend, database and debugging of web applications 
+                        or websites.
+                    </p>
+                    <a href="https://www.geeksforgeeks.org/what-is-full-stack-development/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Animated Design Website</h3>
+                        <p>create some bubbles animation and all these bubbles images 
+                            will be moving from button to top of website, then it will 
+                            disappear at top. All bubbles animation will start at different 
+                            time. I created it using CSS animation.
+                        </p>
+                        <a href="https://yukoit.github.io/animated-website/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Glassmorphism Creative Cloud App</h3>
+                        <p>make a glassmorphism style landing page and 
+                            build a complex layout that looks good on all screen sizes 
+                            with HTML, CSS & JS.
+                        </p>
+                        <a href="https://yukoit.github.io/cloud-app/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Travel like Airbnb Website</h3>
+                        <p> Make Travel Website Design Like Airbnb Using HTML And CSS.
+                            I created a house rental website like Airbnb and this website
+                            front-end using HTML and CSS. This website design will be completely responsive it means it
+                            will look perfect in your laptop and mobile phone also.
+                        </p>
+                        <a href="https://yukoit.github.io/travel/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/yukoIT?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane" aria-hidden="true"></i>yuko.IT.programming@gmail.com</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>+62 859-4542-3693</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ⓒ Pingkan. Made with <i class="fa fa-heart" aria-hidden="true"></i> by yukoIT</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.left = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjqkei2kpgA94J9AEZpCu0ArU3-UanD1ghUktnTLIH4qhR0z-8drDAp_rjSYOVMbu_/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
